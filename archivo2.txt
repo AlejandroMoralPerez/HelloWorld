@@ -1,4 +1,0 @@
-second test 
-Prueba para status
-Cambios para commit
-Creado de nuevo el fichero tras el delete
