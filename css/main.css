@@ -64,10 +64,10 @@ header {
 .nav-main ul li a {
     padding: 2px;
 }
+
 .nav-main ul li a:hover {
     border-bottom: 2px solid #ffffff;
 }
-
 
 .nav-main ul.nav-menu {
     flex: 1;
