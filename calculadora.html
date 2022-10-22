@@ -8,28 +8,42 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/calculadora.css">
     <!-- JAVASCRIPT -->
-    <script type="text/javascript">
+    <script src="js/calculadora.js" type="text/javascript"></script>
 
-        function vaciar () { 
-        document.getElementById("n1").value = "";
-        }
-
-        function cuadrado() { 
-        let num = document.getElementById("n1");
-        num.value = num.value * num.value;
-        }
-
-        function inverso() {
-            let num = document.getElementById("n1");
-            num.value = 1 / num.value;
-        }
-
-    </script>
 </head>
 <body>
-    Número:
-  <input type="text" id="n1" onclick="vaciar()">
-  <button onclick="cuadrado()"> x<sup>2</sup> </button>
-  <button onclick="inverso()"> 1/x </button>
+    <div class="container">
+        <div class="calculadora">
+            Número:
+            <div class="botones">
+                <input type="text" id="n1" onclick="vaciar()">
+                <button onclick="cuadrado()"> x<sup>2</sup> </button>
+                <button onclick="inverso()"> 1/x </button>
+
+                <button class="boton-grande" onclick="display.borrarTodo()">C</button>
+                <button onclick="display.borrar()">&larr;</button>
+                <button class="operador" value="dividir">%</button>
+
+                <button class="numero">7</button>
+                <button class="numero">8</button>
+                <button class="numero">9</button>
+                <button class="operador" value="multiplicar">X</button>
+
+                <button class="numero">4</button>
+                <button class="numero">5</button>
+                <button class="numero">6</button>
+                <button class="operador" value="restar">-</button>
+
+                <button class="numero">1</button>
+                <button class="numero">2</button>
+                <button class="numero">3</button>
+                <button class="operador" value="sumar">+</button>
+
+                <button class="boton-grande numero">0</button>
+                <button class="numero">.</button>
+                <button class="operador" value="igual">=</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
